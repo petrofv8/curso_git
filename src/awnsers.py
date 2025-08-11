@@ -5,7 +5,7 @@ import streamlit as st
 def rd1_question_9(df):
     df_grouped = df[['id', 'seller_type']].groupby('seller_type')
 
-    df_grouped = df_grouped.count().reset_index(df1)
+    df_grouped = df_grouped.count().reset_index(df)
 
     df_grouped = df_grouped.rename(columns={'id': 'count'})
 
