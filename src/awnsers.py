@@ -13,7 +13,7 @@ def rd1_question_9(df):
 
     fig= px.bar(
         df_grouped,
-        x="seller_type"
+       
         y="count",
         labels{"seller_type":"seller type","count":"Quantity"}
 
